@@ -26,9 +26,6 @@ function changeColor(ev) {
   });
 
 
-
-
-
   // Mise à jour de la couleur du menu burger
  
   const barElements = document.querySelectorAll(".bar");
