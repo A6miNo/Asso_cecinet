@@ -41,22 +41,73 @@ body {
     height: auto;
     width: 100%;
 }
+/* Bouton de changement couleur et de remontée*/
+.badge {
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    transform: translate(0, -50%);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .badge label{
+    display: block;
+    font-size: 100%;
+    text-align: center;
+}
+.badge label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100%;
+    text-align: center;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+#colorpicker {
+    color: #ffffff;
+    border: 1px solid #3498db;
+    cursor: pointer;
+    border-radius: 50%; 
+    width: 30px; 
+    height: 30px; 
+}
+
+#colorpicker::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 50%; 
+}
+
+#colorpicker::-webkit-color-swatch {
+    border: 1px solid #3498db;
+    border-radius: 50%; 
+}
+
+
 
 #backtotop {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #3498db; /* Couleur de fond du bouton */
-    color: #ffffff; /* Couleur du texte du bouton */
+    bottom: 5%;
+    right: 0.5%;
+    transform: translate(0, -50%);
+    background-color: #3498db; 
+    color: #ffffff; 
     border: none;
-    border-radius: 50%; /* Pour rendre le bouton rond */
-    padding: 10px; /* Ajustez la taille du bouton en fonction de vos besoins */
+    border-radius: 50%; 
+    padding: 10px;
     cursor: pointer;
 }
 
 #backtotop i {
     display: block;
-    font-size: 16px;
+  
     text-align: center;
 }
 /*STYLE NAV MOBILE FIRST*/
