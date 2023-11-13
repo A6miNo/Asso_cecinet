@@ -9,11 +9,11 @@
 :root {
     --font-size: 1rem;
     /* CSS HEX */
-    --color-first: #1D3557;
-    --color-second: #457B9D;
-    --color-three: #A8DADC;
+    --color-first:   rgba(156, 91, 199, 0.4);
+    --color-second: rgba(140, 82, 255, 0.8);
+    --color-three: rgba(56,182,255,1);
     --color-four: #F1FAEE;
-    --color-five: #FFBB00;
+    --color-five: red
     
 }
 
@@ -42,8 +42,10 @@ body {
     width: 100%;
 }
 
-
-  
+/*Boostrap personnalisé*/
+  .card{
+    width: 18rem;
+  }
   
 /* Bouton de changement couleur et de remontée*/
 .badge {
@@ -54,7 +56,7 @@ body {
     display: flex;
     flex-direction:column;
     align-items: center;
-    color: #ffffff;
+    color: var(--color-four);
     padding: 5px;
     cursor: pointer;
     border-radius: 5px;
@@ -72,12 +74,12 @@ body {
     font-size: 100%;
     text-align: center;
     font-weight: bolder;
-    color: #ffffff;
+    color: var(--color-four);
 }
 
 #colorpicker {
-    color: #ffffff;
-    border: 1px #A8DADC solid;
+    color: var(--color-four);
+    border: 1px var(--color-second) solid;
     cursor: pointer;
     border-radius: 50%; 
     width: 30px; 
@@ -90,7 +92,7 @@ body {
 }
 
 #colorpicker::-webkit-color-swatch {
-    border: 1px solid #3498db;
+    border: 1px solid var(--color-second);
     border-radius: 50%; 
 }
 
@@ -100,11 +102,11 @@ body {
     right: 0.5%;
     transform: translate(0, -50%);
   
-    color: #ffffff; 
+    color: var(--color-four); 
     border-radius: 50%; 
     padding: 10px;
     cursor: pointer;
-    border: 2px solid  #3498db;
+    border: 2px solid  var(--color-second);
 }
 
 #backtotop i {
@@ -154,7 +156,7 @@ body {
 
 /* Lien de la page courante */
 .active {
-    background-color: rgba(255, 187, 0, 0.402);
+    background-color: var(--color-four);
     border-radius: 20px;
     pointer-events: none;
     cursor: default;
@@ -167,11 +169,19 @@ body {
 
 /* Navbar Burger Responsive */
 .logo {
-    width: 45%;
-}
+    width: auto;
+    max-height: 100%;
+    margin: 0 auto; 
+    display: block;
+   }
 
 .navbar {
     height: 24vh;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between; /* Place les éléments à l'extrémité de la navbar */
+    align-items: center; /* Centre verticalement les éléments */
+
 }
 
 .navbar_links {
@@ -181,7 +191,7 @@ body {
     width: 0;
     height: 100vh;
     position: absolute;
-    top: 11rem;
+    top: 8.5rem;
     right: 0;
     z-index: 99;
     background: var(--color-three);
@@ -208,8 +218,10 @@ body {
 }
 
 .navbar_link > a {
-    display: block;
-    padding: 1rem;
+    display: inline-block;
+    padding: 0.4rem;
+    margin-top: 20px;
+    margin-left: 50px;
     font-size: 1.7rem;
     color: var(--color-second);
     transition: all 0.1s ease-in-out;
@@ -241,7 +253,7 @@ body {
     display: block;
     width: 90%;
     height: 4px;
-    background:var(--color-first);
+    background:var(--color-second);
     border-radius: 3px;
     transition: all 0.5s ease-in-out;
 }
@@ -252,7 +264,7 @@ body {
     height: 4px;
     position: absolute;
     left: 0;
-    background: var(--color-first);
+    background: var(--color-second);
     border-radius: 3px;
     transition: all 0.5s ease-in-out;
 }
