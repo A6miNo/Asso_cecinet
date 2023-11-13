@@ -11,8 +11,8 @@
     /* CSS HEX */
     --color-first:   rgba(156, 91, 199, 0.4);
     --color-second: rgba(140, 82, 255, 0.8);
-    --color-three: rgba(56,182,255,1);
-    --color-four: #F1FAEE;
+    --color-three: rgb(182, 218, 239);
+    --color-four: #d7b0e4;
     --color-five: red
     
 }
@@ -46,11 +46,65 @@ body {
   .card-perso{
     width: 18rem;
   }
+
+  .btn-custom {
+    background-color: rgba(156, 91, 199, 0.648);
+    border-color: rgba(156, 91, 199, 0.4); 
+    color: #fff; 
+}
+  /******SLIDE******/
+  .carousel-inner {
+    margin-top: 5px;
+    height: 300px; 
   
-/* Bouton de changement couleur et de remontée*/
+  }
+  /*style image slide*/
+  .carousel-item{
+    height: 85%;
+    background-position: center;
+    background-size: cover;
+    background-position: 20% 50%;
+    background-repeat: no-repeat;
+  }
+   /* Styles pour les flèches de navigation */
+   .carousel-control-prev, .carousel-control-next {
+    color: #8c52ff; 
+    
+    border-radius: 50%;
+    width:3rem;
+    height: 3rem;
+    
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .bi .bi-chevron-left{
+    color: #8c52ff; 
+  }
+
+
+  /* Styles pour les indicateurs (pagination) */
+
+  .carousel-indicators li {
+    background-color:gray; /* Couleur des cercles inactifs */
+
+  }
+  .carousel-indicators {
+    border-radius: 30%;
+    background-color:gray;
+  }
+
+   .carousel-indicators .active {
+    border-color: #8c52ff; 
+    background-color:#8c52ff;
+    }
+  
+/***** Bouton de changement couleur et de remontée*****/
 .badge {
     position: fixed;
-    top: 50%;
+    bottom: 15%;
     right: 0%;
     transform: translate(0, -50%);
     display: flex;
@@ -115,7 +169,7 @@ body {
     font-size: 10px;
 }
 
-/*STYLE NAV MOBILE FIRST*/
+/*****STYLE NAV MOBILE FIRST******/
 .navbar {
     display: flex;
     align-items: center;
@@ -156,7 +210,7 @@ body {
 
 /* Lien de la page courante */
 .active {
-    background-color: var(--color-four);
+    background-color: rgba(50, 68, 230, 0.555);
     border-radius: 20px;
     pointer-events: none;
     cursor: default;
@@ -179,8 +233,8 @@ body {
     height: 24vh;
     padding-bottom: 5px;
     display: flex;
-    justify-content: space-between; /* Place les éléments à l'extrémité de la navbar */
-    align-items: center; /* Centre verticalement les éléments */
+    justify-content: space-between; 
+    align-items: center; 
 
 }
 
@@ -311,3 +365,26 @@ body {
     transition: all 1.4s ease-out;
 }
 /* END STYLE NAV */
+
+/*style index*/
+
+.custom-bg{
+    width: 100%;
+    height:30rem;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    box-shadow: 2px #631e79;
+}
+.box{
+    box-shadow: rgb(182, 218, 239) 0px 5px 15px;
+    background-color: #8c52ffd6;
+ }
+
+ .custom-bg .btn:hover {
+    background-color:#8c52ff38;
+    opacity: 1; 
+    color:rgb(69, 142, 185);
+    font-weight: bolder;
+    text-shadow: 0 0 5px white;
+}

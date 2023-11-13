@@ -47,44 +47,123 @@
         </button>
     </nav>
     <header>
+        <!--START CARROUSEL-->
+        <section id="hero">
+            <div id="heroCarousel"  class="carousel slide carousel-fade" data-bs-ride="carousel">
+       <!-- pagination -->
+                <ul class="carousel-indicators" id="hero-carousel-indicators">
+                    <li data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#heroCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#heroCarousel" data-bs-slide-to="2"></li>
+                </ul>
+                        <!-- Flèches de navigation -->
+                        
 
-<!--Image  avec boutons-->
-<div> 
-    <a href=""> Notre mission</a>
-    <a href="">Nos actions</a>
-    <a href="">Adherer à l'association</a>
-</div>
+    
+              <div class="carousel-inner" role="listbox">
+        
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background-image: url(image/slide/slide-1.jpg)">
+                    <div class="container">
+                        <div class="mt-2 bg-white bg-opacity-25 d-flex flex-column align-items-center">
+                            <h2>SLide 1 <span>Medicio</span></h2>
+                            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
+                            <a href="#about" class="btn-get-started btn btn-custom scrollto rounded-2 d-inline-block text-nowrap">Lire</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url(image/slide/slide-2.png)">
+                  <div class="container">
+                    <div class="mt-2 bg-white bg-opacity-25 d-flex flex-column align-items-center">
+                        <h2>Slide 2</h2>
+                        <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
+                        <a href="#about" class="btn-get-started btn btn-custom scrollto rounded-2 d-inline-block text-nowrap">Découvrir</a>
+                    </div>
+                    </div>
+            
+                    </div>
+                   
+                <!-- Slide 3 -->
+                <div class="carousel-item" style="background-image: url(image/slide/slide-3.jpg)">
+                  <div class="container">
+                    <div class="mt-2 bg-white bg-opacity-25 d-flex flex-column align-items-center">
+                        <h2>slide 3</h2>
+                    <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
+                    <a href="#about" class="btn-get-started btn btn-custom scrollto rounded-2 d-inline-block text-nowrap">Découvrir</a>
+                </div>
+                </div>
+        
+              </div>
+        
+              <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+              </a>
+        
+              <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+              </a>
+   
+
+      
+            </div>
+          </section>
+<!--END CARROUSEL-->
+
     </header>
     <main>
         <!--presentation-->
-<section>
-    <h2>L'association</h2>
-    <p>PRISMA a été façonné par des professionnels de santé libéraux unis par une vision commune de solidarité et de défense mutuelle. Nous croyons en la force de notre interdépendance, transformant ainsi notre unité en une puissante voix collective.</p>
-    <p>Le 30 avril 2020, en réponse à la crise sanitaire du COVID-19, l'association a vu le jour. Sous le nom de "PRISMA" (Protection et Représentation des Intérêts des Soignants en Médecine Ambulatoire), nous avons été officiellement établis en tant qu'entité juridique régie par la loi du 1er juillet 1901, enregistrée sous le numéro XXXXXXXX.</p>
-    <p>Nous sommes nés de la nécessité de défendre les intérêts des professions libérales soignantes. Nous comprenons que la défense du personnel soignant est cruciale, car ils sont les piliers de l'accès aux soins pour tous. En protégeant et représentant nos soignants, nous contribuons directement à garantir que chaque individu, quel que soit son statut, ait accès à des soins médicaux de qualité.</p>
-
-      <div class="container-fluid">
-        <ul class="list-group list-group-flush col-12 d-flex justify-content-center align-items-center">Notre engagement tient en trois mots:
-            <div class="card card-perso">
-            <li class="list-group-item text-center">
-                apolitique
-            </li>
-            <li class="list-group-item text-center">
-                non-lucratif
-            </li>
-            <li class="list-group-item text-center">
-                fédérateur
-            </li>
+        <section class="container mt-5 border order shadow-sm rounded">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="image/logo-prisma.png" alt="logo" class="img-fluid rounded-start">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-center text-md-start my-2">L'association</h2>
+                    <p>PRISMA a été façonné par des professionnels de santé libéraux unis par une vision commune de solidarité et de défense mutuelle. Nous croyons en la force de notre interdépendance, transformant ainsi notre unité en une puissante voix collective.</p>
+                    <p>Le 30 avril 2020, en réponse à la crise sanitaire du COVID-19, l'association a vu le jour. Sous le nom de "PRISMA" (Protection et Représentation des Intérêts des Soignants en Médecine Ambulatoire), nous avons été officiellement établis en tant qu'entité juridique régie par la loi du 1er juillet 1901, enregistrée sous le numéro XXXXXXXX.</p>
+                    <p>Nous sommes nés de la nécessité de défendre les intérêts des professions libérales soignantes. Nous comprenons que la défense du personnel soignant est cruciale, car ils sont les piliers de l'accès aux soins pour tous. En protégeant et représentant nos soignants, nous contribuons directement à garantir que chaque individu, quel que soit son statut, ait accès à des soins médicaux de qualité.</p>
+                </div>
+            </div>
+        
+            <div class="container-fluid">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <ul class="list-group list-group-flush col-12">
+                        <div class="card card-perso">
+                            <li class="list-group-item text-center">
+                                apolitique
+                            </li>
+                            <li class="list-group-item text-center">
+                                non-lucratif
+                            </li>
+                            <li class="list-group-item text-center">
+                                fédérateur
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+    <!--Image  avec boutons-->
+    <div class="custom-bg d-flex align-items-center justify-content-center mt-2" style="background-image: url('https://files.sbcdnsb.com/images/w9wlmrc_AehztFSxGYZMpw/content/1588146241/1224674/2000/5f844c57138d39987b9620200429-3117828-1adsgfg.jpeg'); background-size: cover;">
+        <div class="d-flex flex-column align-items-center justify-content-center gap-3 mx-auto my-5">
+            <a class="btn box" href="">Notre mission</a>
+            <div class="btn-group d-flex gap-2 flex-wrap">
+                <a class="btn box" href="">Nos actions</a>
+                <a class="btn box" href="">Adhérer à l'association</a>
+            </div>
         </div>
+    </div>
 
-        </ul>
-    </div>     
-<div>
-<p>Nous sommes actuellement <span> 458 membres</span></p>
-</div>
 </section>
 <!--Status de l'assocation-->
 <section class="status">
+    <div>
+
+<p>Nous sommes actuellement <span> 458 membres</span></p>
+</div>
 <img src="" alt="">
 <a class="btn" href="/views/status.html" target="_blank">Consultez les status</a>
 </section>
@@ -101,7 +180,25 @@
 </section>
 <!--nous contacter avec background image-->
 <section>
-
+    <div class="container mt-5 bg-custom">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="image/histoire.jpg" class="card-img-top" alt="Image Histoire">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">Quelques mots d'histoire</h2>
+                        <p class="card-text">Tout a commencé en mars 2020 par la création d'un groupe de soutien sur Facebook durant la crise sanitaire, et de surcroît économique, liée au COVID 19. Cette initiative, menée par des professionnels de santé, a fédéré en un mois pas moins de 50 000 membres, avec plus de 240 000 publications ! Le besoin d'unité, d'action collective et d'échange est alors évident et approuvé, et la méthode soutenue par nos membres. Ainsi germa l'idée de créer une association qui rassemble et fédère l'ensemble des professionnels soignants, dans le respect de nos différences et de nos spécificités.</p>
+                        <a href="/notre-mission#frise-chronologique_1179216" class="btn btn-custom">En savoir plus sur la création de l'association</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </section>
 <div class="badge">
     <label for="colorpicker" class="circle">C</label>
@@ -124,7 +221,7 @@
             <input class="form-control" type="email" name="email" placeholder="Your Email">
           </div>
           <div class="form-group flex-column align-items-end">
-            <button class="btn btn-primary mb-2 mb-md-0" type="submit">Subscribe</button>
+            <button class="btn btn-custom mb-2 mb-md-0" type="submit">Subscribe</button>
           </div>
         </form>
       </div>
@@ -135,7 +232,9 @@
     <footer>
         <p>&copy; 2023 A6MINO</p>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script src="/js/nav.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/color.js"></script>
