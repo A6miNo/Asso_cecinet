@@ -62,7 +62,10 @@ body {
 }
 
 
-
+.newsletter-index {
+    z-index: -1;
+    padding-left: 5px;
+}
 
 .fadeInOnScroll {
     opacity: 0;
