@@ -11,7 +11,6 @@
     <link rel="icon" href="/image/favicon-32x32.png" type="image/x-icon">
     <title>PRISMA - Praticiens Réunis pour l'Inclusion et la Santé Médicale pour Tous</title>
  
-
     <!-- Style Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
@@ -50,10 +49,10 @@
         </button>
     </nav>
     <header>
-        <h1>PRISMA- Praticiens Réunis pour l'Inclusion et la Santé Médicale pour Tous</h1>
+        <h1 class="text-center mt-2">PRISMA- Praticiens Réunis pour l'Inclusion et la Santé Médicale pour Tous</h1>
         <!--START CARROUSEL-->
         <section id="hero">
-            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div id="heroCarousel" class="bg-transparent carousel slide carousel-fade" data-bs-ride="carousel">
                 <!-- pagination -->
                 <ul class="carousel-indicators" id="hero-carousel-indicators">
                     <li data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></li>
@@ -65,8 +64,8 @@
                 <div class="carousel-inner" role="listbox">
                     <!-- Slide 1 -->
                     <div class="carousel-item active" style="background-image: url(image/slide/slide-1.jpg)">
-                        <div class="container ">
-                            <div class="my-auto  bg-white bg-opacity-25 d-flex flex-column align-items-center">
+                        <div class="container mt-2 mt-md-5 ">
+                            <div class="my-auto bg-white bg-opacity-25 d-flex flex-column align-items-center">
                                 <h2>Accès aux soins pour tous</h2>
                                 <p>Améliorer l'accès aux soins commence par reconnaître et soutenir la profession médicale. Nous nous engageons à créer un environnement propice pour les professionnels de la santé, garantissant des soins de qualité accessibles à tous, indépendamment de leur situation financière.</p>
                                 <!--<a href="#about" class=" btn btn-custom scrollto rounded-2 d-inline-block text-nowrap">Découvrir</a>-->
@@ -76,7 +75,7 @@
         
                     <!-- Slide 2 -->
                     <div class="carousel-item" style="background-image: url(image/slide/slide-2.png)">
-                        <div class="container">
+                        <div class="container mt-2 mt-md-5">
                             <div class=" my-auto bg-white bg-opacity-25 d-flex flex-column align-items-center">
                                 <h2>Soutien à la recherche contre le cancer du sein</h2>
                                 <p>Nous nous engageons pleinement à soutenir la recherche contre le cancer du sein. Chaque contribution compte dans notre quête commune pour des traitements plus efficaces, des diagnostics précoces et, ultimement, un monde sans cancer du sein.</p>
@@ -87,7 +86,7 @@
         
                     <!-- Slide 3 -->
                     <div class="carousel-item" style="background-image: url(image/slide/slide-3.jpg)">
-                        <div class="container">
+                        <div class="container mt-2 mt-md-5">
                             <div class="my-auto bg-white bg-opacity-25 d-flex flex-column align-items-center">
                                 <h2>Soutien aux Aidants des Personnes Âgées</h2>
                                 <p>Nous sommes déterminés à offrir un soutien essentiel aux personnes qui prennent soin de nos aînés. Avec des ressources dédiées et des programmes d'accompagnement, nous facilitons la vie des aidants, contribuant ainsi à améliorer la qualité de vie des personnes âgées que nous chérissons.</p>
@@ -192,10 +191,7 @@
 
 
 <!-- Boutons Fixes defilement et color -->
-<div class="badge">
-    <label for="colorpicker" class="circle">C</label>
-    <input id="colorpicker" type="color" value="#5992c7" />
-  </div>
+
   <button id="backtotop"  class="circle" title="Vers le haut de page">
     <i class="fa fa-arrow-up"></i>
   </button>
@@ -238,19 +234,19 @@
                     <h2 class="text-uppercase">Liens Utiles</h2>
                     <ul class="d-flex flex-column mb-0">
                         <li class="me-3">
-                            <a href="index.html" class="btn btn-link text-white">Accueil</a>
+                            <a href="index.html" class="btn btn-link custom-link">Accueil</a>
                         </li>
                         <li class="me-3">
-                            <a href="/views/mission.html" class="btn btn-link text-white">Calendrier des missions</a>
+                            <a href="/views/mission.html" class="btn btn-link custom-link">Calendrier des missions</a>
                         </li>
                         <li class="me-3">
-                            <a href="/views/apropos.html" class="btn btn-link text-white">Qui sommes-nous?</a>
+                            <a href="/views/apropos.html" class="btn btn-link custom-link">Qui sommes-nous?</a>
                         </li>
                         <li class="me-3">
-                            <a href="/views/formulaire.html" class="btn btn-link text-white">Contact</a>
+                            <a href="/views/formulaire.html" class="btn btn-link custom-link">Contact</a>
                         </li>
                         <li class="me-3">
-                            <a href="#" class="btn btn-link text-white">Mon compte</a>
+                            <a href="#" class="btn btn-link custom-link">Mon compte</a>
                         </li>
                     </ul>
                 </section>
@@ -277,8 +273,8 @@
 
         <!-- Informations sur le copyright (au milieu des deux colonnes) -->
         <div class="text-center p-3">
-            <p>&copy; 2023 A6MINO</p>
-            <a href="/views/status.html" class="btn btn-link text-white">Consultez les statuts</a>
+            <p class="custom-link">&copy; 2023 A6MINO</p>
+            <a href="/views/status.html" class="btn btn-link custom-link" target="_blank">Consultez les statuts</a>
         </div>
     </div>
 </footer>

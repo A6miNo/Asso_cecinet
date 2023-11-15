@@ -18,6 +18,9 @@
 }
 
 /* Reset */
+h1{
+    color:#b082fe ;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -43,6 +46,7 @@ input::placeholder {
     font-size: 0.8rem; /* Remplacez la taille de la police par la valeur souhaitée */
 }
 /*Boostrap personnalisé*/
+
   .card-perso{
     width: 18rem;
   }
@@ -54,6 +58,10 @@ input::placeholder {
     background-color: rgba(156, 91, 199, 0.648);
     border-color: rgba(156, 91, 199, 0.4); 
     color: #fff; 
+}
+.btn-custom:hover {
+    background-color: rgba(200,229,240,0.648);
+    border-color: rgba(91, 172, 199, 0.4); 
 }
 .bg-custom2 {
     background: linear-gradient(45deg, rgba(156, 91, 199, 0.4), rgba(140, 82, 255, 0.8));
@@ -74,7 +82,8 @@ input::placeholder {
 /******SLIDE******/
 .carousel-inner {
     margin-top: 5px;
-    height: 60vh; /* Utilisation de vh au lieu de pixels */
+    height: 60vh; 
+    z-index: -10;
 }
 
 /* Style image slide */
@@ -204,6 +213,7 @@ input::placeholder {
     font-weight: 600;
     color: var(--color-second);
     background: var(--color-three);
+       background: linear-gradient(to top, #fff 0%, var(--color-three) 10%);
     height: 7.5em;
 }
 
@@ -273,7 +283,7 @@ input::placeholder {
     right: 0;
     z-index: 99;
     background: var(--color-three);
-       transform: translateX(110%);
+    transform: translateX(110%);
     transition: all 0.3s ease-in-out;
 }
 
@@ -442,12 +452,18 @@ input::placeholder {
     background: linear-gradient(to bottom, var(--color-three) 0%, var(--color-four) 80%);
 }
 /* Style CSS pour le footer */
-.footer h2 {
-    color: #b082fe; /* Couleur du texte */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Ombre du texte vers le blanc */
-    font-size: 1.5rem; /* Taille du texte pour les petits écrans */
+.footer h2, #missions h2, #membres h2 {
+    color: #b082fe; 
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); 
+    font-size: 1.5rem;
 }
-
 footer{
     background: linear-gradient(to bottom, #fff 0%, var(--color-three) 7%);
 }
+.custom-link{
+   color:#631e79
+}
+.custom-link:hover {
+    color: white;
+}
+

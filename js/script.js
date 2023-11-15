@@ -23,16 +23,21 @@ $(document).ready(function () {
   });
 
   //Animation
+  //Animation rotation image
   $(document).ready(function() {
-    //  Animation image qui fait une rotation
-    $("#img-anim").animate({ opacity: 1, deg: 360 }, {
-      duration: 2000, 
-      step: function(now) {
-        $(this).css({ transform: 'rotate(' + now + 'deg)' });
-      }
-    });
-
+    // Définir l'intervalle pour l'animation toutes les 4 secondes (4000 millisecondes)
+    setInterval(function() {
+      // Animation image qui fait une rotation
+      $("#img-anim").animate({ opacity: 1, deg: '+=360' }, {
+        duration: 2000, 
+        step: function(now) {
+          $(this).css({ transform: 'rotate(' + now + 'deg)' });
+        }
+      });
+    }, 4000);
   });
+
+  //Animation fadein
 
   $(document).ready(function() {
     $(window).scroll(function() {
