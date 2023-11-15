@@ -10,12 +10,15 @@
     <!--icone et titre-->
     <link rel="icon" href="/image/favicon-32x32.png" type="image/x-icon">
     <title>PRISMA - Praticiens Réunis pour l'Inclusion et la Santé Médicale pour Tous</title>
-    <!--Style-->
-    <link rel="stylesheet" href="asset/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+ 
+
+    <!-- Style Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Style personnalisé -->
     <link rel="stylesheet" href="/css/mf.css">
 
-    <script rel="stylesheet" href="asset/bootstrap-5.3.0-alpha3-dist//js/jquery-3.7.0.min.js"></script>
-    <script type="application/javascript" src="asset/bootstrap-5.3.0-alpha3-dist//js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/609ebaf712.js" crossorigin="anonymous"></script>
 
 </head>
@@ -47,6 +50,7 @@
         </button>
     </nav>
     <header>
+        <h1>PRISMA- Praticiens Réunis pour l'Inclusion et la Santé Médicale pour Tous</h1>
         <!--START CARROUSEL-->
         <section id="hero">
             <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -62,10 +66,10 @@
                     <!-- Slide 1 -->
                     <div class="carousel-item active" style="background-image: url(image/slide/slide-1.jpg)">
                         <div class="container ">
-                            <div class="mt-3 bg-white bg-opacity-25 d-flex flex-column align-items-center">
-                                <h2>Slide 1 <span>Medicio</span></h2>
-                                <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
-                                <a href="#about" class="btn-get-started btn btn-custom scrollto rounded-2 d-inline-block text-nowrap">Lire</a>
+                            <div class="my-auto  bg-white bg-opacity-25 d-flex flex-column align-items-center">
+                                <h2>Accès aux soins pour tous</h2>
+                                <p>Améliorer l'accès aux soins commence par reconnaître et soutenir la profession médicale. Nous nous engageons à créer un environnement propice pour les professionnels de la santé, garantissant des soins de qualité accessibles à tous, indépendamment de leur situation financière.</p>
+                                <!--<a href="#about" class=" btn btn-custom scrollto rounded-2 d-inline-block text-nowrap">Découvrir</a>-->
                             </div>
                         </div>
                     </div>
@@ -73,10 +77,10 @@
                     <!-- Slide 2 -->
                     <div class="carousel-item" style="background-image: url(image/slide/slide-2.png)">
                         <div class="container">
-                            <div class="mt-2 bg-white bg-opacity-25 d-flex flex-column align-items-center">
-                                <h2>Slide 2</h2>
-                                <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
-                                <a href="#about" class="btn-get-started btn btn-custom scrollto rounded-2 d-inline-block text-nowrap">Découvrir</a>
+                            <div class=" my-auto bg-white bg-opacity-25 d-flex flex-column align-items-center">
+                                <h2>Soutien à la recherche contre le cancer du sein</h2>
+                                <p>Nous nous engageons pleinement à soutenir la recherche contre le cancer du sein. Chaque contribution compte dans notre quête commune pour des traitements plus efficaces, des diagnostics précoces et, ultimement, un monde sans cancer du sein.</p>
+                                <!--<a href="#about" class=" btn btn-custom scrollto rounded-2 d-inline-block text-nowrap">Découvrir</a>-->
                             </div>
                         </div>
                     </div>
@@ -84,10 +88,10 @@
                     <!-- Slide 3 -->
                     <div class="carousel-item" style="background-image: url(image/slide/slide-3.jpg)">
                         <div class="container">
-                            <div class="mt-2 bg-white bg-opacity-25 d-flex flex-column align-items-center">
-                                <h2>Slide 3</h2>
-                                <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel.</p>
-                                <a href="#about" class="btn-get-started btn btn-custom scrollto rounded-2 d-inline-block text-nowrap">Découvrir</a>
+                            <div class="my-auto bg-white bg-opacity-25 d-flex flex-column align-items-center">
+                                <h2>Soutien aux Aidants des Personnes Âgées</h2>
+                                <p>Nous sommes déterminés à offrir un soutien essentiel aux personnes qui prennent soin de nos aînés. Avec des ressources dédiées et des programmes d'accompagnement, nous facilitons la vie des aidants, contribuant ainsi à améliorer la qualité de vie des personnes âgées que nous chérissons.</p>
+                                <!--<a href="#about" class=" btn btn-custom scrollto rounded-2 d-inline-block text-nowrap">Découvrir</a>-->
                             </div>
                         </div>
                     </div>
@@ -164,11 +168,11 @@
 </section>
 
 <!--Histoire soins avec  goutierre-->
-<section class="container-fluid mb-3 ">
+<section class="container mb-3 hist ">
     <div class="container mt-5 ">
         <div class="row">
             <div class="col-md-6 d-flex align-items-center justify-content-center">
-                <div class="  bg-transparent mb-2">
+                <div class=" mt-2 bg-transparent mb-2">
                     <img src="image/histoire.jpg" class="box card-img-top rounded-circle" alt="Image Histoire">
                 </div>
             </div>
@@ -225,17 +229,69 @@
 
   
 <!--FOOTER-->
-    <footer class="mt-2">
-        <a class="btn" href="/views/status.html" target="_blank">Consultez les status</a>
-        <p>&copy; 2023 A6MINO</p>
-    </footer>
+<footer class="footer mt-2 text-white text-center">
+    <div class="container-fluid p-4">
+        <div class="row">
+            <!-- Liens utiles (colonne de gauche) -->
+            <div class="col-md-6">
+                <section class="mb-4">
+                    <h2 class="text-uppercase">Liens Utiles</h2>
+                    <ul class="d-flex flex-column mb-0">
+                        <li class="me-3">
+                            <a href="index.html" class="btn btn-link text-white">Accueil</a>
+                        </li>
+                        <li class="me-3">
+                            <a href="/views/mission.html" class="btn btn-link text-white">Calendrier des missions</a>
+                        </li>
+                        <li class="me-3">
+                            <a href="/views/apropos.html" class="btn btn-link text-white">Qui sommes-nous?</a>
+                        </li>
+                        <li class="me-3">
+                            <a href="/views/formulaire.html" class="btn btn-link text-white">Contact</a>
+                        </li>
+                        <li class="me-3">
+                            <a href="#" class="btn btn-link text-white">Mon compte</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            
+            <!-- Suivez-nous (colonne de droite) -->
+            <div class="col-md-6">
+                <section class="mb-4">
+                    <h2 class="text-uppercase">Suivez-nous</h2>
+                    <div class="btn-group">
+                        <a href="https://fr-fr.facebook.com/" target="_blank" class="btn btn-social btn-facebook me-2">
+                            <i class="fab fa-facebook" style="color: #b082fe;"></i> Facebook
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="btn btn-social btn-instagram me-2">
+                            <i class="fab fa-instagram" style="color: #b082fe;"></i> Instagram
+                        </a>
+                        <a href="https://www.tiktok.com/fr" target="_blank" class="btn btn-social btn-tiktok me-2"  >
+                            <i class="fab fa-tiktok" style="color: #b082fe;"></i> TikTok
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
 
+        <!-- Informations sur le copyright (au milieu des deux colonnes) -->
+        <div class="text-center p-3">
+            <p>&copy; 2023 A6MINO</p>
+            <a href="/views/status.html" class="btn btn-link text-white">Consultez les statuts</a>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Inclure jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
     <script src="/js/nav.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/color.js"></script>
+    
+
+    
 </body>
 </html>

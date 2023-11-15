@@ -10,14 +10,34 @@ label {
     letter-spacing: 0.1em;
     width: 80%;
     margin-left: 3px;
+    font-size: 0.8em;
     }
 .help-block.with-errors {
     color: #ff5050;
     margin-top: 5px;
 
 }
-
+.title-form{
+    color:#b082fe;
+}
 .card{
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+/*ajuster la taille du texte des input */
+.placeholder-option {
+    font-size: 80%; 
+font-weight: 400;
+color: #8197b5;
+}
+body {
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+    height: auto;
+    width: 100%;
+    background: url(/image/bg-form.png) no-repeat center center fixed;
+    background-size: cover;
+  
+
 }

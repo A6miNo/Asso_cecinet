@@ -11,7 +11,7 @@
     /* CSS HEX */
     --color-first:   rgba(156, 91, 199, 0.4);
     --color-second: rgba(140, 82, 255, 0.8);
-    --color-three: rgb(182, 218, 239);
+    --color-three: rgb(200,229,240);
     --color-four: #d7b0e4;
     --color-five: red
     
@@ -36,10 +36,7 @@ i {
 }
 
 body {
-    font-size: 16px;
-    font-family: 'Titillium Web', sans-serif;
-    height: auto;
-    width: 100%;
+    overflow-x: hidden; /* Désactiver le défilement horizontal */
 }
 
 input::placeholder {
@@ -74,39 +71,44 @@ input::placeholder {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
-  /******SLIDE******/
-  .carousel-inner {
+/******SLIDE******/
+.carousel-inner {
     margin-top: 5px;
-    height: 300px; 
-  
-  }
-  /*style image slide*/
-  .carousel-item{
+    height: 60vh; /* Utilisation de vh au lieu de pixels */
+}
+
+/* Style image slide */
+.carousel-item {
     height: 85%;
-    background-position: center;
-    background-size: cover;
     background-position: 20% 50%;
+    background-size: cover;
     background-repeat: no-repeat;
-  }
-   /* Styles pour les flèches de navigation */
-   .carousel-control-prev, .carousel-control-next {
-    color: #8c52ff; 
-    
+}
+
+/* Styles pour les flèches de navigation */
+.carousel-control-prev,
+.carousel-control-next {
+    color: #8c52ff;
     border-radius: 50%;
-    width:3rem;
+    width: 3rem;
     height: 3rem;
-    
-  }
-  .carousel-control-prev,
-  .carousel-control-next {
     top: 50%;
     transform: translateY(-50%);
-  }
-  .bi .bi-chevron-left{
-    color: #8c52ff; 
-  }
+}
 
+/* Ajouter une ombre sur le texte du carrousel */
+.carousel-item h2,
+.carousel-item p,
+.carousel-item .btn {
+    text-shadow: 2px 2px 5px rgba(200, 195, 195, 0.7);
+}
 
+/* Ajouter une ombre sur le texte du carrousel */
+.carousel-item h2,
+.carousel-item p,
+.carousel-item  {
+    text-shadow: 2px 2px 5px rgba(200, 195, 195, 0.7);
+}
   /* Styles pour les indicateurs (pagination) */
 
   .carousel-indicators li {
@@ -122,7 +124,7 @@ input::placeholder {
     border-color: #8c52ff; 
     background-color:#8c52ff;
     }
-  
+   
 /***** Bouton de changement couleur et de remontée*****/
 .badge {
     position: fixed;
@@ -205,9 +207,6 @@ input::placeholder {
     height: 7.5em;
 }
 
-.navbar_links {
-    display: flex;
-}
 
 .navbar_link {
     padding: 0 10px;
@@ -274,8 +273,7 @@ input::placeholder {
     right: 0;
     z-index: 99;
     background: var(--color-three);
-   
-    transform: translateX(130%);
+       transform: translateX(110%);
     transition: all 0.3s ease-in-out;
 }
 
@@ -289,7 +287,7 @@ input::placeholder {
 }
 
 .navbar_link {
-    transform: translateX(101%);
+    transform: translateX(110%);
     transition: all 0.3s ease-in-out;
 }
 
@@ -408,11 +406,11 @@ input::placeholder {
  }
 
  .custom-bg .btn:hover {
-    background-color:#8c52ff38;
-    opacity: 1; 
-    color:rgb(69, 142, 185);
+    background-color: rgba(140, 82, 255, 0.5); 
+    color: rgb(219, 226, 231);
     font-weight: bolder;
-    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 5px rgb(182, 218, 239);
+    transition: background-color 0.4s ease; 
 }
 
 .card-custom {
@@ -438,9 +436,18 @@ input::placeholder {
   padding: 35px;
   text-align: center;
 }
-/*FOOTER*/
+/*Style section pour degradé entre newsletter et footer*/
+
+.hist{
+    background: linear-gradient(to bottom, var(--color-three) 0%, var(--color-four) 80%);
+}
+/* Style CSS pour le footer */
+.footer h2 {
+    color: #b082fe; /* Couleur du texte */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Ombre du texte vers le blanc */
+    font-size: 1.5rem; /* Taille du texte pour les petits écrans */
+}
 
 footer{
-
-    background: var(--color-three);
+    background: linear-gradient(to bottom, #fff 0%, var(--color-three) 7%);
 }

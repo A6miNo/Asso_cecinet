@@ -50,80 +50,133 @@
     </button>
     </nav>
 
-<!--FORMULAIRE DE CONTACT-->
-<div class="container">
-    <div class="text-center mt-5">
-      <h1>Nous contacter</h1>
-    </div>
-  
-    <div class="row">
-      <div class="col-lg-7 mx-auto">
-        <div class="card mt-2 mx-auto p-4 bg-light">
-          <div class="card-body bg-light">
-            <form id="contact-form" role="form">
-              <div class="controls">
-  
-                <!-- Nom et Prénom sur la même ligne pour les grands écrans -->
-                <div class="form-group row">
-                  <div class="col-md-6">
-                    <label for="form_name">Nom</label>
-                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Votre nom" required="required" data-error="Le nom est requis.">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="form_lastname">Prénom</label>
-                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Votre prénom" required="required" data-error="Le prénom est requis.">
-                  </div>
-                </div>
-  
-                <!-- Email et L'objet de votre message sur la même ligne pour les grands écrans -->
-                <div class="form-group row">
-                  <div class="col-md-6">
-                    <label for="form_email">Email</label>
-                    <input id="form_email" type="email" name="email" class="form-control" placeholder="votre-email@exemple.com" required="required" data-error="Email valide requis.">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="form_need">L'objet de votre message</label>
-                    <select id="form_need" name="need" class="form-control" required="required" data-error="Veuillez spécifier votre besoin.">
-                      <option value="" selected disabled>-- Choisissez votre motif --</option>
-                      <option>Nous rejoindre</option>
-                      <option>Faire un don</option>
-                      <option>Autre</option>
-                    </select>
-                  </div>
-                </div>
-  
-                <!-- Message -->
-                <div class="form-group">
-                  <label for="form_message">Message</label>
-                  <textarea id="form_message" name="message" class="form-control" placeholder="Écrivez votre message ici" rows="4" required="required" data-error="Veuillez laisser un message."></textarea>
-                </div>
-  
-                <!-- Bouton d'envoi -->
-                <div class="form-group">
-                  <input type="submit" class="btn btn-custom btn-send btn-block" value="Envoyer le message">
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+    <div class="container">
+      <div class="text-center mt-5">
+          <h1 class="title-form">Nous contacter</h1>
       </div>
-    </div>
+  
+      <div class="row">
+          <div class="col-lg-7 mx-auto">
+              <div class="card mt-2 mx-auto p-4 bg-light">
+                  <div class="card-body bg-light">
+                      <form id="contact-form" role="form" method="post" data-toggle="validator">
+                          <div class="controls">
+  
+                              <!-- Nom et Prénom sur la même ligne pour les grands écrans -->
+                              <div class="form-group row">
+                                  <div class="col-md-6">
+                                      <label for="form_name">Nom</label>
+                                      <input id="form_name" type="text" name="name" class="form-control small-text" placeholder="Votre nom" required="required" data-error="Le nom est requis.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <label for="form_lastname">Prénom</label>
+                                      <input id="form_lastname" type="text" name="surname" class="form-control small-text" placeholder="Votre prénom" required="required" data-error="Le prénom est requis.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+  
+                              <!-- Email et L'objet de votre message sur la même ligne pour les grands écrans -->
+                              <div class="form-group row">
+                                  <div class="col-md-6">
+                                      <label for="form_email">Email</label>
+                                      <input id="form_email" type="email" name="email" class="form-control small-text" placeholder="votre-email@exemple.com" required="required" data-error="Email valide requis.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <label for="form_need">L'objet de votre message</label>
+                                    <select id="form_need" name="need" class="form-control placeholder-option" required="required" data-error="Veuillez spécifier votre besoin.">
+                                        <option value="defaut" disabled selected>-- Choisissez votre motif --</option>
+                                        <option>Nous rejoindre</option>
+                                        <option>Faire un don</option>
+                                        <option>Autre</option>
+                                    </select>
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+  
+                              <!-- Message -->
+                              <div class="form-group">
+                                  <label for="form_message">Message</label>
+                                  <textarea id="form_message" name="message" class="form-control" placeholder="Écrivez votre message ici" rows="4" required="required" data-error="Veuillez laisser un message."></textarea>
+                                  <div class="help-block with-errors"></div>
+                              </div>
+  
+                              <!-- Bouton d'envoi -->
+                              <div class="form-group">
+                                <button type="submit" class="btn btn-custom btn-send btn-block mx-auto " >Envoyer le message</button>
+                            </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
+  
 
 
 
-<div class="badge">
-  <label for="colorpicker" class="circle">C</label>
-  <input id="colorpicker" type="color" value="#007BFF" />
-</div>
+
 <button id="backtotop"  class="circle" title="Vers le haut de page">
   <i class="fa fa-arrow-up"></i>
 </button>
-<footer>
+<!--FOOTER-->
+<footer class="footer mt-2 text-white text-center">
+  <div class="container-fluid p-4">
+      <div class="row">
+          <!-- Liens utiles (colonne de gauche) -->
+          <div class="col-md-6">
+              <section class="mb-4">
+                  <h2 class="text-uppercase">Liens Utiles</h2>
+                  <ul class="d-flex flex-column mb-0">
+                      <li class="me-3">
+                          <a href="../index.html" class="btn btn-link text-white">Accueil</a>
+                      </li>
+                      <li class="me-3">
+                          <a href="/views/mission.html" class="btn btn-link text-white">Calendrier des missions</a>
+                      </li>
+                      <li class="me-3">
+                          <a href="/views/apropos.html" class="btn btn-link text-white">Qui sommes-nous?</a>
+                      </li>
+                      <li class="me-3">
+                          <a href="/views/formulaire.html" class="btn btn-link text-white">Contact</a>
+                      </li>
+                      <li class="me-3">
+                          <a href="#" class="btn btn-link text-white">Mon compte</a>
+                      </li>
+                  </ul>
+              </section>
+          </div>
+          
+          <!-- Suivez-nous (colonne de droite) -->
+          <div class="col-md-6">
+              <section class="mb-4">
+                  <h2 class="text-uppercase">Suivez-nous</h2>
+                  <div class="btn-group">
+                      <a href="https://fr-fr.facebook.com/" target="_blank" class="btn btn-social btn-facebook me-2">
+                          <i class="fab fa-facebook" style="color: #b082fe;"></i> Facebook
+                      </a>
+                      <a href="https://www.instagram.com" target="_blank" class="btn btn-social btn-instagram me-2">
+                          <i class="fab fa-instagram" style="color: #b082fe;"></i> Instagram
+                      </a>
+                      <a href="https://www.tiktok.com/fr" target="_blank" class="btn btn-social btn-tiktok me-2"  >
+                          <i class="fab fa-tiktok" style="color: #b082fe;"></i> TikTok
+                      </a>
+                  </div>
+              </section>
+          </div>
+      </div>
 
+      <!-- Informations sur le copyright (au milieu des deux colonnes) -->
+      <div class="text-center p-3">
+          <p>&copy; 2023 A6MINO</p>
+          <a href="/views/status.html" class="btn btn-link text-white">Consultez les statuts</a>
+        </div>
+  </div>
 </footer>
     <script src="/js/nav.js"></script>
     <script src="/js/script.js"></script>
-    <script src="/js/color.js"></script>
+ 
 </body>
 </html>   
