@@ -1,5 +1,5 @@
 // Sélection de tous les éléments auquel le changement de couleur sera appliqué.
-const elementsToChangeColor = document.querySelectorAll("footer, ul, .circle, article, h1, .active a, header, .bar, a, .navbar");
+const elementsToChangeColor = document.querySelectorAll("footer, ul, .sidebar, .circle, .article, article, h1, .active a, header, .bar, a, .navbar");
 const colorpicker = document.getElementById("colorpicker");
 
 

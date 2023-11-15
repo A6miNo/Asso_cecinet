@@ -11,7 +11,9 @@
     <link rel="icon" href="/image/favicon-32x32.png" type="image/x-icon">
     <title>Missions -PRISMA</title>
     <!--Style-->
+    <link rel="stylesheet" href="/css/event.css">
     <link rel="stylesheet" href="/css/mf.css">
+ 
     <link rel="stylesheet" href="/asset/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     
     <script rel="stylesheet" href="/asset/bootstrap-5.3.0-alpha3-dist//js/jquery-3.7.0.min.js"></script>
@@ -37,9 +39,7 @@
       <li class="navbar_link four">
           <a href="/views/formulaire.html">Contact</a>
       </li>
-      <li class="navbar_link fifth">
-          <a href="">Mon compte</a>
-      </li>
+    
   </ul>
   <button class="burger">
       <span class="bar"></span>
@@ -48,171 +48,151 @@
 <main class="container">
   <div class="row">
      <!-- Sidebar pour les écrans md et lg -->
-     <div class="col-md-4">
-        <div class="border d-md-flex flex-md-column mx-2 my-2">
-          <h2 class="text-center">Filtrer</h2>
+     <div class="sidebar col-md-3 border d-md-flex flex-md-column mx-2 my-2">
+   
+          <h2 class="text-center mt-2">Filtrer</h2>
           <div id="categories" class="d-flex flex-column mb-2 ">
-              <button class="btn btn-primary mb-1" data-category="product">Toute l'actualité</button>
-              <button class="btn btn-primary mb-1" data-category="conférences">Conférences</button>
-              <button class="btn btn-primary mb-1" data-category="event">Manifestations</button>
-              <button class="btn btn-primary mb-1" data-category="archives">Archives</button>
+              <button class="btn btn-secondary mb-1" data-category="actu">Toute l'actualité</button>
+              <button class="btn btn-secondary mb-1" data-category="conference">Conférences</button>
+              <button class="btn btn-secondary mb-1" data-category="event">Manifestations</button>
+              <button class="btn btn-secondary mb-1" data-category="archive">Archives</button>
           </div>
-     </div>     
-  </div>
+         
+     </div>
 
-      <div class="col-md-8">
-          <!-- Articles  -->
-        <div class="row">
-          <article class="col-md-6 mb-4 card">
-            <h2 class="text-center">Titre article 1</h2>
-            <p class="text-muted">10/11/2023</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              eu odio non tortor laoreet ultrices non nec urna. Aenean eget erat
-              pellentesque, euismod nisl ac, convallis lacus. Mauris ac est
-              ante. Maecenas nec mauris vehicula, lacinia ipsum at, eleifend
-              nibh. Vivamus pharetra, ex ac bibendum hendrerit, odio ex
-              venenatis mauris, quis tempus ante leo id leo. Curabitur molestie
-              massa eget lectus dignissim, sit amet malesuada tellus dapibus.
-              Nulla facilisi. Etiam quis pretium purus. Nullam vehicula euismod
-              nisl, vel egestas magna euismod ac. Mauris porttitor eget quam sed
-              viverra. Nullam sollicitudin, odio ut varius interdum, quam arcu
-              rutrum ligula, vitae suscipit lacus elit at ligula. Quisque
-              maximus vitae magna sed pulvinar. Quisque non tortor convallis,
-              hendrerit quam ac, sodales turpis. Ut tempus imperdiet ligula
-              lobortis pharetra. Nullam id purus vel odio eleifend hendrerit.
-            </p>
-          </article>
-          <article class="col-md-6 mb-4 card">
-            <h2>Titre article 2</h2>
-            <p class="text-muted">25/12/2025</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              eu odio non tortor laoreet ultrices non nec urna. Aenean eget erat
-              pellentesque, euismod nisl ac, convallis lacus. Mauris ac est
-              ante. Maecenas nec mauris vehicula, lacinia ipsum at, eleifend
-              nibh. Vivamus pharetra, ex ac bibendum hendrerit, odio ex
-              venenatis mauris, quis tempus ante leo id leo. Curabitur molestie
-              massa eget lectus dignissim, sit amet malesuada tellus dapibus.
-              Nulla facilisi. Etiam quis pretium purus. Nullam vehicula euismod
-              nisl, vel egestas magna euismod ac. Mauris porttitor eget quam sed
-              viverra. Nullam sollicitudin, odio ut varius interdum, quam arcu
-              rutrum ligula, vitae suscipit lacus elit at ligula. Quisque
-              maximus vitae magna sed pulvinar. Quisque non tortor convallis,
-              hendrerit quam ac, sodales turpis. Ut tempus imperdiet ligula
-              lobortis pharetra. Nullam id purus vel odio eleifend hendrerit.
-            </p>
-          </article>
-          <article class="col-md-6 mb-4 card">
-            <h2>Titre article 3</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              eu odio non tortor laoreet ultrices non nec urna. Aenean eget erat
-              pellentesque, euismod nisl ac, convallis lacus. Mauris ac est
-              ante. Maecenas nec mauris vehicula, lacinia ipsum at, eleifend
-              nibh. Vivamus pharetra, ex ac bibendum hendrerit, odio ex
-              venenatis mauris, quis tempus ante leo id leo. Curabitur molestie
-              massa eget lectus dignissim, sit amet malesuada tellus dapibus.
-              Nulla facilisi. Etiam quis pretium purus. Nullam vehicula euismod
-              nisl, vel egestas magna euismod ac. Mauris porttitor eget quam sed
-              viverra. Nullam sollicitudin, odio ut varius interdum, quam arcu
-              rutrum ligula, vitae suscipit lacus elit at ligula. Quisque
-              maximus vitae magna sed pulvinar. Quisque non tortor convallis,
-              hendrerit quam ac, sodales turpis. Ut tempus imperdiet ligula
-              lobortis pharetra. Nullam id purus vel odio eleifend hendrerit.
-            </p>
-          </article>
-          <article class="col-md-6 mb-4 card">
-            <h2>Titre article 4</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              eu odio non tortor laoreet ultrices non nec urna. Aenean eget erat
-              pellentesque, euismod nisl ac, convallis lacus. Mauris ac est
-              ante. Maecenas nec mauris vehicula, lacinia ipsum at, eleifend
-              nibh. Vivamus pharetra, ex ac bibendum hendrerit, odio ex
-              venenatis mauris, quis tempus ante leo id leo. Curabitur molestie
-              massa eget lectus dignissim, sit amet malesuada tellus dapibus.
-              Nulla facilisi. Etiam quis pretium purus. Nullam vehicula euismod
-              nisl, vel egestas magna euismod ac. Mauris porttitor eget quam sed
-              viverra. Nullam sollicitudin, odio ut varius interdum, quam arcu
-              rutrum ligula, vitae suscipit lacus elit at ligula. Quisque
-              maximus vitae magna sed pulvinar. Quisque non tortor convallis,
-              hendrerit quam ac, sodales turpis. Ut tempus imperdiet ligula
-              lobortis pharetra. Nullam id purus vel odio eleifend hendrerit.
-            </p>
-          </article>
-          <article class="col-md-6 mb-4 card">
-            <h2>Titre article 5</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              eu odio non tortor laoreet ultrices non nec urna. Aenean eget erat
-              pellentesque, euismod nisl ac, convallis lacus. Mauris ac est
-              ante. Maecenas nec mauris vehicula, lacinia ipsum at, eleifend
-              nibh. Vivamus pharetra, ex ac bibendum hendrerit, odio ex
-              venenatis mauris, quis tempus ante leo id leo. Curabitur molestie
-              massa eget lectus dignissim, sit amet malesuada tellus dapibus.
-              Nulla facilisi. Etiam quis pretium purus. Nullam vehicula euismod
-              nisl, vel egestas magna euismod ac. Mauris porttitor eget quam sed
-              viverra. Nullam sollicitudin, odio ut varius interdum, quam arcu
-              rutrum ligula, vitae suscipit lacus elit at ligula. Quisque
-              maximus vitae magna sed pulvinar. Quisque non tortor convallis,
-              hendrerit quam ac, sodales turpis. Ut tempus imperdiet ligula
-              lobortis pharetra. Nullam id purus vel odio eleifend hendrerit.
-            </p>
-          </article>
-          <article class="col-md-6 mb-4 card">
-            <h2>Titre article 6</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              eu odio non tortor laoreet ultrices non nec urna. Aenean eget erat
-              pellentesque, euismod nisl ac, convallis lacus. Mauris ac est
-              ante. Maecenas nec mauris vehicula, lacinia ipsum at, eleifend
-              nibh. Vivamus pharetra, ex ac bibendum hendrerit, odio ex
-              venenatis mauris, quis tempus ante leo id leo. Curabitur molestie
-              massa eget lectus dignissim, sit amet malesuada tellus dapibus.
-              Nulla facilisi. Etiam quis pretium purus. Nullam vehicula euismod
-              nisl, vel egestas magna euismod ac. Mauris porttitor eget quam sed
-              viverra. Nullam sollicitudin, odio ut varius interdum, quam arcu
-              rutrum ligula, vitae suscipit lacus elit at ligula. Quisque
-              maximus vitae magna sed pulvinar. Quisque non tortor convallis,
-              hendrerit quam ac, sodales turpis. Ut tempus imperdiet ligula
-              lobortis pharetra. Nullam id purus vel odio eleifend hendrerit.
-            </p>
-          </article>
-          <article class="col-md-6 mb-4 card">
-            <h2>Titre article 7</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              eu odio non tortor laoreet ultrices non nec urna. Aenean eget erat
-              pellentesque, euismod nisl ac, convallis lacus. Mauris ac est
-              ante. Maecenas nec mauris vehicula, lacinia ipsum at, eleifend
-              nibh. Vivamus pharetra, ex ac bibendum hendrerit, odio ex
-              venenatis mauris, quis tempus ante leo id leo. Curabitur molestie
-              massa eget lectus dignissim, sit amet malesuada tellus dapibus.
-              Nulla facilisi. Etiam quis pretium purus. Nullam vehicula euismod
-              nisl, vel egestas magna euismod ac. Mauris porttitor eget quam sed
-              viverra. Nullam sollicitudin, odio ut varius interdum, quam arcu
-              rutrum ligula, vitae suscipit lacus elit at ligula. Quisque
-              maximus vitae magna sed pulvinar. Quisque non tortor convallis,
-              hendrerit quam ac, sodales turpis. Ut tempus imperdiet ligula
-              lobortis pharetra. Nullam id purus vel odio eleifend hendrerit.
-            </p>
-          </article>
+
+
+   <!-- Articles  -->
+      <div class="col-md-8 mt-2 mx-auto">
+        <div class="row d-flex align-items-stretch article p-2">     
+
+            <!-- Conférences -->
+         <div class=" col-md-6 actu conference archive">
+          <article class=" d-flex align-items-stretch ">
+            <div class="card evenement-card">
+                <img src="/image/events/conference-3518465_1280.jpg" class="card-img-top" alt="Image de la conférence">
+                <div class="card-body">
+                    <h5 class="card-title">Conférence sur la recherche médicale</h5>
+                    <p class="card-text">Thème : Ensemble pour la Santé Mondiale</p>
+                    <p class="card-text">Date : 20 décembre 2023</p>
+                    <p class="card-text">Lieu : Lieu de la conférence</p>
+                    <a href="#" class="btn btn-secondary">En savoir plus</a>
+                </div>
+            </div>
+        </article>
+         </div>            
+           
+         <div class=" col-md-6 actu conference ">
+          <article class="d-flex align-items-stretch">
+            <div class="card evenement-card">
+                <img src="/image/events/laptop-7978588_1280.jpg" class="card-img-top" alt="Image de la conférence">
+                <div class="card-body">
+                    <h5 class="card-title">Réunion médicale interprofessionnelle</h5>
+                    <p class="card-text">Date : 15 mars 2024</p>
+                    <p class="card-text">Lieu : Lieu de la conférence</p>
+                    <a href="#" class="btn btn-secondary">En savoir plus</a>
+                </div>
+            </div>
+        </article>
+      </div> 
+        
+      <div class=" col-md-6 actu conference ">
+        <article class="d-flex align-items-stretch">
+          <div class="card evenement-card">
+              <img src="/image/events/meeting-83519_1280.jpg" class="card-img-top" alt="Image de la conférence">
+              <div class="card-body">
+                  <h5 class="card-title">Symposium sur l'avenir de la santé</h5>
+                  <p class="card-text">Date : 5 fevrier 2024</p>
+                  <p class="card-text">Lieu : Lieu de la conférence</p>
+                  <a href="#" class="btn btn-secondary">En savoir plus</a>
+              </div>
+          </div>
+        </article>
+      </div>
+      
+ 
+      <div class=" col-md-6 actu conference ">
+        <article class="d-flex align-items-stretch">
+          <div class="card evenement-card">
+              <img src="/image/events/startup-593341_1280.jpg" class="card-img-top" alt="Image de la conférence">
+              <div class="card-body">
+                  <h5 class="card-title">Réunion médicale interprofessionnelle</h5>
+                  <p class="card-text">Date : 13 decembre 2024</p>
+                  <p class="card-text">Lieu : Lieu de la conférence</p>
+                  <a href="#" class="btn btn-secondary">En savoir plus</a>
+              </div>
+          </div>
+        </article>
+      </div>
+    
+      <div class=" col-md-6 actu conference ">
+        <article class="d-flex align-items-stretch">
+          <div class="card evenement-card">
+              <img src="/image/events/cancer.png" class="card-img-top" alt="Image de la conférence">
+              <div class="card-body">
+                  <h5 class="card-title">Conférence sur la recherche contre le cancer du sein</h5>
+                  <p class="card-text">Date : 18 janvier 2024</p>
+                  <p class="card-text">Lieu : Lieu de la conférence</p>
+                  <a href="#" class="btn btn-secondary">En savoir plus</a>
+              </div>
+          </div>
+      </article>
+
+      </div>
+    
+
+      <!-- Events-->
+      <div class="col-md-6 actu event">
+        <article class="d-flex align-items-stretch">
+          <div class="card evenement-card">
+              <img src="/image/events/u-n-1190183_1280.jpg" class="card-img-top" alt="Image de la conférence">
+              <div class="card-body">
+                  <h5 class="card-title">Manifestations</h5>
+                  <p class="card-text">Date : 5 mars 2024</p>
+                  <p class="card-text">Lieu : Lieu de la conférence</p>
+                  <a href="#" class="btn btn-secondary">En savoir plus</a>
+              </div>
+          </div>
+      </article>
+      </div>
+  
+      <div class="col-md-6 actu event">
+        <article class="d-flex align-items-stretch">
+          <div class="card evenement-card">
+              <img src="/image/events/expression-4513446_1280.jpg" class="card-img-top" alt="Image de la conférence">
+              <div class="card-body">
+                  <h5 class="card-title">Marche solidaire</h5>
+                  <p class="card-text">Date : 15 mars 2023</p>
+                  <p class="card-text">Lieu : Lieu de la conférence</p>
+                  <a href="#" class="btn btn-secondary">En savoir plus</a>
+              </div>
+          </div>
+        </article>
+      </div>
+ 
+ 
+      <div class="col-md-6 actu event">
+        <article class="d-flex align-items-stretch">
+          <div class="card evenement-card">
+              <img src="/image/events/running-2735267_1280.jpg" class="card-img-top" alt="Image de la conférence">
+              <div class="card-body">
+                  <h5 class="card-title">Course pour lever des fonds</h5>
+                  <p class="card-text">Date : 18 juillet 2024</p>
+                  <p class="card-text">Lieu : Lieu de la conférence</p>
+                  <a href="#" class="btn btn-secondary">En savoir plus</a>
+              </div>
+          </div>
+        </article>
+
+      </div>
+
         </div>          
       </div>
   </div>
 </main>
 
 
-     <div id="sidebar" class="column">
-          <h2>Filtrer</h2>
-      <div id="cate" class="row">
-        <button data-category="product">Toute l'actualité</button>
-        <button data-category="conférences">Conférences</button>
-        <button data-category="event">Manifestations</button>
-        <button data-category="archives">Archives</button>
-      </div>
-     </div>
+     
   
  
     
@@ -249,9 +229,7 @@
                       <li class="me-3">
                           <a href="/views/formulaire.html" class="btn btn-link custom-link">Contact</a>
                       </li>
-                      <li class="me-3">
-                          <a href="#" class="btn btn-link custom-link">Mon compte</a>
-                      </li>
+                     
                   </ul>
               </section>
           </div>
@@ -282,9 +260,14 @@
         </div>
   </div>
 </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script src="/js/script.js"></script>
     <script src="/js/nav.js"></script>
     <script src="/js/color.js"></script>
+
 
   </body>
 </html>
