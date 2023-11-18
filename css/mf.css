@@ -9,18 +9,52 @@
 :root {
     --font-size: 1rem;
     /* CSS HEX */
-    --color-first:   rgba(156, 91, 199, 0.4);
-    --color-second: rgba(140, 82, 255, 0.8);
-    --color-three: rgb(200,229,240);
-    --color-four: #d7b0e4;
-    --color-five: red
+    /*Barre de Navigation Hamburger (Fond)
+    Fond du titre H1
+    Section (Logo Dynamique) : #724B8F
+    Fond de la section Dégradé de #724B8F à #4D8FB8
+    Bordure des boutons 
+    Couleur des chiffres
+    Section (Photo Ronde) - Fond : #724B8F
+    Couleur des champs de la newsletter 
+    Couleur des icônes de réseaux sociaux*/
+    --color-first:   #724B8F;
+    /*Couleur du bouton d'inscription : Dégradé de #A57FB2 à #4D8FB8*/
+
+    /*Icônes du menu burger
+    Couleur des boutons
+    Cadre de la photo ronde
+    Couleur des liens de navigation (ou blanc)*/
+    --color-second: #4D8FB8;
+
+    /*Au survol des boutons
+    Section Newsletter (Bouton d'inscription - Au survol)
+    Footer (Liens de navigation - Au survol)
+     */
+    --color-three:  #A57FB2;
+    /* Encart "Nous Sommes X Membres" (Fond) 
+    Section Newsletter (Fond) 
+    Footer (Fond)*/
+    --color-four: #F4F4F4;
+
+    /*Titres, texte sur les boutons,
+    texte de présentation, 
+    texte sur l'image, texte sur la photo ronde,
+    texte de la newsletter
+    Footer (Texte "Nous Suivre", "Copyright", "Statuts")*/
+    --color-five: #FFFFFF
+    
     
 }
 
 /* Reset */
 h1{
-    color:#b082fe ;
+    color:var(--color-first);
 }
+h2{
+    color:var(--color-second);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -39,35 +73,93 @@ i {
 }
 
 body {
-    overflow-x: hidden; /* Désactiver le défilement horizontal */
+    overflow-x: hidden; /* Désactive le défilement horizontal */
+    background-color: var(--color-four);
+
 }
 
 input::placeholder {
-    font-size: 0.8rem; /* Remplacez la taille de la police par la valeur souhaitée */
+    font-size: 1rem; 
+    background-color: var(--color-four);
+    text-align: center;
+}
+
+.footer h2, #missions h2, #membres h2 {
+    color: var(--color-four); 
+    text-shadow: 2px 2px 4px var(--color-first); 
+    font-size: 1.5rem;
+}
+
+.bg-custom2 {
+    background: #4d8fb8a7;
+   
+    padding: 20px; 
+    color: var(--color-four); 
+}
+
+.important{
+    font-weight: bold;
+    color: var(--color-first);
 }
 /*Boostrap personnalisé*/
+.card-text{
+color: var(--color-three);
+}
+.form-control {
+    background-color: var(--color-four);
+}
+.list-group-item{
+    background-color: var(--color-four);
+    color: var(--color-second);
 
+}
   .card-perso{
     width: 18rem;
+    background-color: var(--color-three);
   }
   .card-perso2{
     display: inline-flex;
     margin-left: 10px;
   }
   .btn-custom {
-    background-color: rgba(156, 91, 199, 0.648);
-    border-color: rgba(156, 91, 199, 0.4); 
-    color: #fff; 
+    background-color: var(--color-second);
+    border-color: var(--color-three); 
+    color: var(--color-four); 
 }
 .btn-custom:hover {
-    background-color: rgba(200,229,240,0.648);
-    border-color: rgba(91, 172, 199, 0.4); 
+    background-color: var(--color-four);
+    border-color:var(--color-second); 
+    color:var(--color-three)
 }
-.bg-custom2 {
-    background: linear-gradient(45deg, rgba(156, 91, 199, 0.4), rgba(140, 82, 255, 0.8));
-    padding: 20px; 
-    color: #fff; 
-}
+
+  .btn-custom2 {
+    background: linear-gradient(to right, var(--color-three), var(--color-second));
+    border-color: var(--color-second);
+    color: var(--color-four); 
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-custom2:hover {
+    background: linear-gradient(to right, var(--color-second), var(--color-first));
+    border-color: var(--color-second);
+    color: var(--color-four);
+  }
+
+  .btn-custom3 {
+    background: var(--color-first);
+    border-color: var(--color-second);
+    color: var(--color-four);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-custom3:hover {
+    background: var(--color-four);
+    border-color: var(--color-first);
+    color:var(--color-first); 
+  
+  }
+  
+
 
 
 .newsletter-index {
@@ -97,7 +189,7 @@ input::placeholder {
 /* Styles pour les flèches de navigation */
 .carousel-control-prev,
 .carousel-control-next {
-    color: #8c52ff;
+    color: var(--color-three);
     border-radius: 50%;
     width: 3rem;
     height: 3rem;
@@ -105,33 +197,26 @@ input::placeholder {
     transform: translateY(-50%);
 }
 
-/* Ajouter une ombre sur le texte du carrousel */
-.carousel-item h2,
-.carousel-item p,
-.carousel-item .btn {
-    text-shadow: 2px 2px 5px rgba(200, 195, 195, 0.7);
-}
-
-/* Ajouter une ombre sur le texte du carrousel */
 .carousel-item h2,
 .carousel-item p,
 .carousel-item  {
-    text-shadow: 2px 2px 5px rgba(200, 195, 195, 0.7);
+    text-shadow: 2px 2px 5px var(--color-second);
+    color:var(--color-four);
+   
 }
   /* Styles pour les indicateurs (pagination) */
 
   .carousel-indicators li {
-    background-color:gray; /* Couleur des cercles inactifs */
+    background-color:var(--color-four); /* Couleur des cercles inactifs */
 
   }
   .carousel-indicators {
     border-radius: 30%;
-    background-color:gray;
+    background-color:var(--color-three);
   }
 
    .carousel-indicators .active {
-    border-color: #8c52ff; 
-    background-color:#8c52ff;
+    background-color:var(--color-first);
     }
    
 /***** Bouton de changement couleur et de remontée*****/
@@ -190,12 +275,12 @@ input::placeholder {
     bottom: 5%;
     right: 0.5%;
     transform: translate(0, -50%);
-  background-color: #5992c7;
+    background-color: var(--color-second);
     color: var(--color-four); 
     border-radius: 50%; 
     padding: 10px;
     cursor: pointer;
-    border: 2px solid  var(--color-second);
+  
 }
 
 #backtotop i {
@@ -212,8 +297,8 @@ input::placeholder {
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--color-second);
-    background: var(--color-three);
-       background: linear-gradient(to top, #fff 0%, var(--color-three) 10%);
+    background: var(--color-first);
+    background: linear-gradient(to top, var(--color-four) 0%, var(--color-first) 10%);
     height: 7.5em;
 }
 
@@ -232,7 +317,7 @@ input::placeholder {
     display: block;
     width: 0;
     content: "";
-    background: var(--color-five);
+    background: var(--color-four);
    
     height: 1px;
     transition: all .4s;
@@ -244,7 +329,7 @@ input::placeholder {
 
 /* Lien de la page courante */
 .active {
-    background-color: rgba(50, 68, 230, 0.555);
+    background-color: var(--color-three);
     border-radius: 20px;
     pointer-events: none;
     cursor: default;
@@ -282,7 +367,8 @@ input::placeholder {
     top: 8.5rem;
     right: 0;
     z-index: 99;
-    background: var(--color-three);
+    background:  linear-gradient(to top, #8f68b2, #724b8f);
+    box-shadow: 5px 4px 8px 5px var(--color-four);
     transform: translateX(110%);
     transition: all 0.3s ease-in-out;
 }
@@ -341,7 +427,7 @@ input::placeholder {
     display: block;
     width: 90%;
     height: 4px;
-    background:var(--color-second);
+    background:var(--color-four);
     border-radius: 3px;
     transition: all 0.5s ease-in-out;
 }
@@ -352,7 +438,7 @@ input::placeholder {
     height: 4px;
     position: absolute;
     left: 0;
-    background: var(--color-second);
+    background: var(--color-four);
     border-radius: 3px;
     transition: all 0.5s ease-in-out;
 }
@@ -395,6 +481,12 @@ input::placeholder {
     transition: all 1.3s ease-out;
 }
 
+
+@media (min-width: 768px) {
+    .open-nav .navbar_links {
+        width: 25vw;
+    }
+  }
 /* END STYLE NAV */
 
 /*style index*/
@@ -405,18 +497,18 @@ input::placeholder {
     background-size: cover;
     background-position: center;
     opacity: 0.7;
-    box-shadow: 2px #631e79;
+    box-shadow: 2px var(--color-first);
 }
 .box{
-    box-shadow: rgb(182, 218, 239) 0px 5px 15px;
-    background-color: #8c52ffd6;
+    box-shadow:var(--color-second) 0px 5px 15px;
+    background-color: var(--color-three);
  }
 
  .custom-bg .btn:hover {
-    background-color: rgba(140, 82, 255, 0.5); 
-    color: rgb(219, 226, 231);
+    background-color: var(--color-first); 
+    color: var(--color-four);
     font-weight: bolder;
-    text-shadow: 0 0 5px rgb(182, 218, 239);
+    text-shadow: 0 0 5px var(--color-second);
     transition: background-color 0.4s ease; 
 }
 
@@ -426,20 +518,20 @@ input::placeholder {
   }
   
   .gradient-border {
-    background-image: radial-gradient(#5992c7 35%, transparent 35%);
+   
     background-size: 8px 8px;
     border-radius: 16px;
     padding: 35px;
-    background-image: linear-gradient(45deg, #b6daef, #d32ee5);
+    background-image: linear-gradient(45deg,var(--color-second), var(--color-first));
     border-radius: 16px;
     padding: 10px;
   }
 
 
 .content-wrapper {
-  background: #fff;
+  background: var(--color-four);
   border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 15px var(--color-second);
   padding: 35px;
   text-align: center;
 }
@@ -448,19 +540,32 @@ input::placeholder {
 .hist{
     background: linear-gradient(to bottom, var(--color-three) 0%, var(--color-four) 80%);
 }
+
+
+
 /* Style CSS pour le footer */
-.footer h2, #missions h2, #membres h2 {
-    color: #b082fe; 
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); 
-    font-size: 1.5rem;
-}
 footer{
-    background: linear-gradient(to bottom, #fff 0%, var(--color-three) 7%);
+    background: linear-gradient(to bottom, var(--color-four) 0%, var(--color-three) 5%);
 }
-.custom-link{
-   color:#631e79
+.custom-link, footer p{
+   color:var(--color-four)
 }
-.custom-link:hover {
-    color: white;
+.custom-link:hover, footer p:hover {
+    color: var(--color-first);
 }
 
+
+/*Status*/
+
+.status{
+    border-radius: 25%;
+    background-color: var(--color-four);
+    border: var(--color-three);
+    box-shadow: 15px var(--color-three);
+}
+.text-number{
+    color: var(--color-first);
+}
+.status p{
+    color: var(--color-second);
+}

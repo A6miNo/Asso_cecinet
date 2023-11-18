@@ -64,13 +64,19 @@ $(document).ready(function () {
   // Ajoute un gestionnaire d'événement pour le clic sur un bouton de catégorie
   $('#categories button').click(function () {
       // Récupère la valeur du bouton cliqué
-      var category = $(this).attr('data-category');
+      let category = $(this).attr('data-category');
 
       // Masque tous les articles
       $('.actu').hide();
 
       // Affiche seulement les articles correspondant à la catégorie sélectionnée
       $('.' + category).show();
+
+        // Compte le nombre d'articles affichés
+        var count = $('.actu:visible').length;
+
+        // Affiche le nombre de résultats dans la div avec l'id "result"
+        $('#result').text('Nombre de résultats : ' + count);
   });
 });
 

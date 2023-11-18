@@ -27,8 +27,9 @@
     height: auto;
 }
 
-.bg-custom{
-    background:#b6daef;
+.bg-custom {
+    background: repeating-linear-gradient(45deg, var(--color-four), var(--color-four) 20%, var(--color-first) 20%, var(--color-first) 40%);
     border-radius: 20%;
     padding: 10px;
 }
+
