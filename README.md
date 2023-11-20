@@ -11,7 +11,7 @@ Parallèlement, la réalisation du logo et le maquettage seront effectués avec 
 En résumé, le projet vise à créer une présence en ligne percutante pour PRISMA, mettant en avant son identité visuelle, son objet, et ses actions à travers un site Web ergonomique tout en assurant une accessibilité optimale via des dispositifs mobiles.
 
 
-Les points qui seront developpés:
+# Les points qui seront developpés:
 - L'identité visuelle : explication du choix de la palette de couleur , creation du logo, maquette en mobile first
 - Referencement SEO
 - Interface pour les evenements: structure responsive moile first et fonction de filtre
