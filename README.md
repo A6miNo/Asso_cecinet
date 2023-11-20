@@ -1,6 +1,10 @@
 # Asso_PRISMA
 Dans le cadre d'un projet fictif, je réalise un site web vitrine pour une association "PRISMA" Praticiens Réunis pour l'Inclusion et la Santé Médicale Adaptée.
 
+# ACCES
+le site est accesible et déployé sur https://a6mino.github.io/Asso_prisma/views/mission.html
+En cas de probleme de déploiement il est possilbe de faire le git clone du projet
+
 # Resumé / User Story
 Madame Vidal, infirmière libérale et présidente générale de l’association PRISMA, aspire à accroître la visibilité de son organisation. 
 Son objectif est de mettre en lumière l'identité visuelle de l'association, de clarifier sa mission, et surtout de rendre compte de manière transparente des actions passées et à venir pour attirer de nouveaux membres. Actuellement dépourvue d’identité visuelle, Madame Vidal souhaite la création d'un logo distinctif dans le cadre d'une nouvelle charte graphique. Elle exprime également le besoin d'une interface conviviale permettant de suivre les événements de l'association, ainsi que la mise en place d'un formulaire de contact pour faciliter les interactions. 
