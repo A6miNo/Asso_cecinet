@@ -73,7 +73,7 @@ $(document).ready(function () {
       $('.' + category).show();
 
         // Compte le nombre d'articles affichés
-        var count = $('.actu:visible').length;
+        let count = $('.actu:visible').length;
 
         // Affiche le nombre de résultats dans la div avec l'id "result"
         $('#result').text('Nombre de résultats : ' + count);

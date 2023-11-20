@@ -1,3 +1,14 @@
+body {
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+    height: auto;
+    width: 100%;
+    background: url(/image/bg-form.png) no-repeat center center fixed;
+    background-size: cover;
+  
+
+}
+
 /*Personnlisation Boostrap*/
 
 label {
@@ -30,14 +41,4 @@ label {
     font-size: 80%; 
 font-weight: 400;
 color: #4D8FB8;
-}
-body {
-    font-size: 16px;
-    font-family: 'Titillium Web', sans-serif;
-    height: auto;
-    width: 100%;
-    background: url(/image/bg-form.png) no-repeat center center fixed;
-    background-size: cover;
-  
-
 }

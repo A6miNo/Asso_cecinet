@@ -5,8 +5,8 @@ $(document).ready(function () {
         dataType: 'json',
         success: function (data) {
             // Traiter les données et afficher les cartes Bootstrap
-            var users = data.results;
-            var userCardsContainer = $('#userCards');
+            let users = data.results;
+            let userCardsContainer = $('#userCards');
 
             users.forEach(function (user, index) {
                 if (index % 2 === 0) {
@@ -14,7 +14,7 @@ $(document).ready(function () {
                     userCardsContainer.append('</div><div class="row">');
                 }
 
-                var userCard = `
+                let userCard = `
                     <div class="col-md-6 mb-4">
                         <div class="card h-100">
                             <div class="row no-gutters">
