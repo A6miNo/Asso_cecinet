@@ -101,6 +101,8 @@ input::placeholder {
     font-weight: bold;
     color: var(--color-first);
 }
+
+
 /*Boostrap personnalisé*/
 .card-text{
 color: var(--color-three);
