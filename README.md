@@ -2,7 +2,7 @@
 Dans le cadre d'un projet fictif, je réalise un site web vitrine pour une association "PRISMA" Praticiens Réunis pour l'Inclusion et la Santé Médicale Adaptée.
 
 # ACCES
-le site est accesible et déployé sur https://a6mino.github.io/Asso_prisma/views/mission.html
+le site est accesible et déployé sur https://a6mino.github.io/Asso_prisma/index.html
 En cas de probleme de déploiement il est possilbe de faire le git clone du projet
 
 # Resumé / User Story
