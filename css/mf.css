@@ -105,6 +105,12 @@ input::placeholder {
 
 
 /*Boostrap personnalisé*/
+.rounded-circle{
+width: 20rem; 
+height: 20rem; 
+object-fit: cover;
+}
+
 .card-text{
 color: var(--color-three);
 }
